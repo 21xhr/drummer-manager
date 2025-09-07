@@ -1,164 +1,148 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21xHR - Support the Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Roboto:wght@400;700&display=swap');
+
+        :root {
+            --background-color: #0c0c0c;
+            --primary-neon: #ffeb00;
+            --secondary-neon: #ffeb00;
+            --text-color: #f0f0f0;
+            --subtext-color: white;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .container {
+            max-width: 810px;
+            width: 100%;
+        }
+
+        .neon-border {
+            border: 2px solid var(--primary-neon);
+            border-radius: 21px;
+            box-shadow: 0 0 3px var(--primary-neon), 0 0 7px var(--primary-neon),0 0 21px var(--primary-neon), 0 0 42px var(--primary-neon);
+            animation: neon-pulse 2s infinite alternate;
+        }
+
+        .header-title {
+            color: var(--primary-neon);
+        }
+
+        .header-subtitle {
+            color: var(--secondary-neon);
+        }
+
+        .main-text {
+            color: var(--subtext-color);
+        }
+
+        .social-link {
+            color: var(--subtext-color);
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        .social-link:hover {
+            color: var(--primary-neon);
+            text-shadow: 0 0 5px var(--primary-neon);
+        }
+
+        .iframe-container {
+            width: 100%;
+            max-width: 370px;
+            height: 1029px;
+            border-radius: 21px;
+            overflow: hidden;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes neon-pulse {
+            0%, 100% {
+                box-shadow: 0 0 42px var(--primary-neon), 0 0 21px var(--primary-neon), 0 0 7px var(--primary-neon), 0 0 3px var(--primary-neon), 0 0 2.1px var(--primary-neon);
+                border-color: var(--primary-neon);
+            }
+            50% {
+                box-shadow: 0 0 7px var(--primary-neon), 0 0 3px var(--primary-neon), 0 0 2.1px var(--primary-neon);
+                border-color: var(--primary-neon);
+            }
+        }
+    </style>
 </head>
-<body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;21xHR - Support the Game&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&amp;family=Roboto:wght@400;700&amp;display=swap');</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>:root {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--background-color: #0c0c0c;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--primary-neon: #ffeb00;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--secondary-neon: #ffeb00;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--text-color: #f0f0f0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--subtext-color: white;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Roboto', sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--background-color);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-color);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>min-height: 100vh;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>animation: fadeIn 1.5s ease-in-out;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 810px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.neon-border {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 2px solid var(--primary-neon);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 21px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 0 3px var(--primary-neon), 0 0 7px var(--primary-neon),0 0 21px var(--primary-neon), 0 0 42px var(--primary-neon);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>animation: neon-pulse 2s infinite alternate;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.header-title {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary-neon);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.header-subtitle {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--secondary-neon);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.main-text {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--subtext-color);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.social-link {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--subtext-color);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: color 0.3s ease, text-shadow 0.3s ease;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.social-link:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary-neon);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-shadow: 0 0 5px var(--primary-neon);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.iframe-container {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 370px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: 1029px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 21px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-left: auto;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-right: auto;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>@keyframes fadeIn {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>from {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>opacity: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>to {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>opacity: 1;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>@keyframes neon-pulse {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>0%, 100% {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>box-shadow: 0 0 42px var(--primary-neon), 0 0 21px var(--primary-neon), 0 0 7px var(--primary-neon), 0 0 3px var(--primary-neon), 0 0 2.1px var(--primary-neon);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>border-color: var(--primary-neon);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>50% {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>box-shadow: 0 0 7px var(--primary-neon), 0 0 3px var(--primary-neon), 0 0 2.1px var(--primary-neon);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>border-color: var(--primary-neon);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body class="bg-gray-900 text-white"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto p-4 md:p-8 rounded-lg"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1 class="font-bold text-3xl md:text-5xl text-center mb-4 md:mb-6 uppercase tracking-wide header-title"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>Become a producer</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="text-center text-gray-400 mb-8 md:mb-12 main-text"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>Your contributions power the music and the missions. Choose how you want to support.</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="iframe-container neon-border"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;iframe</p>
-<p class="p1"><span class="Apple-converted-space">                </span>id='kofiframe'</p>
-<p class="p1"><span class="Apple-converted-space">                </span>src='https://ko-fi.com/21xhr/?hidefeed=true&amp;widget=true&amp;embed=true&amp;preview=true'</p>
-<p class="p1"><span class="Apple-converted-space">                </span>style='border:none;width:100%;padding:4px;background:#f9f9f9;height:100%;'</p>
-<p class="p1"><span class="Apple-converted-space">                </span>title='21xhr'</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&gt;&lt;/iframe&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Social Links Section --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="mt-12 text-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="font-bold text-2xl md:text-3xl mb-2 header-subtitle"&gt;Follow 21 Everywhere&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-gray-400 mb-6 main-text"&gt;Find all my links and social pages in one place!&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex justify-center space-x-6 text-3xl"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Discord Icon --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="https://discord.gg/av9bpn6Zhp" target="_blank" aria-label="Discord" class="social-link"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;i class="fab fa-discord"&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Facebook Icon --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="https://www.facebook.com/21xhr" target="_blank" aria-label="Facebook" class="social-link"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;i class="fab fa-facebook-f"&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Instagram Icon --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="https://www.instagram.com/21xhr_" target="_blank" aria-label="Instagram" class="social-link"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;i class="fab fa-instagram"&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Twitch Icon --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="https://www.twitch.tv/21xhr" target="_blank" aria-label="Twitch" class="social-link"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;i class="fab fa-twitch"&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- X (Twitter) Icon --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="https://x.com/21xhr" target="_blank" aria-label="X" class="social-link"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;i class="fab fa-x-twitter"&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- YouTube Icon --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="https://www.youtube.com/@21xhr" target="_blank" aria-label="YouTube" class="social-link"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;i class="fab fa-youtube"&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;index</p>
+<body class="bg-gray-900 text-white">
+    <div class="container mx-auto p-4 md:p-8 rounded-lg">
+        <h1 class="font-bold text-3xl md:text-5xl text-center mb-4 md:mb-6 uppercase tracking-wide header-title">
+            Become a producer
+        </h1>
+        <p class="text-center text-gray-400 mb-8 md:mb-12 main-text">
+            Your contributions power the music and the missions. Choose how you want to support.
+        </p>
+
+        <div class="iframe-container neon-border">
+            <iframe
+                id='kofiframe'
+                src='https://ko-fi.com/21xhr/?hidefeed=true&widget=true&embed=true&preview=true'
+                style='border:none;width:100%;padding:4px;background:#f9f9f9;height:100%;'
+                title='21xhr'
+            ></iframe>
+        </div>
+
+        <!-- Social Links Section -->
+        <div class="mt-12 text-center">
+            <h2 class="font-bold text-2xl md:text-3xl mb-2 header-subtitle">Follow 21 Everywhere</h2>
+            <p class="text-gray-400 mb-6 main-text">Find all my links and social pages in one place!</p>
+            <div class="flex justify-center space-x-6 text-3xl">
+                <!-- Discord Icon -->
+                <a href="https://discord.gg/av9bpn6Zhp" target="_blank" aria-label="Discord" class="social-link">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <!-- Facebook Icon -->
+                <a href="https://www.facebook.com/21xhr" target="_blank" aria-label="Facebook" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <!-- Instagram Icon -->
+                <a href="https://www.instagram.com/21xhr_" target="_blank" aria-label="Instagram" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <!-- Twitch Icon -->
+                <a href="https://www.twitch.tv/21xhr" target="_blank" aria-label="Twitch" class="social-link">
+                    <i class="fab fa-twitch"></i>
+                </a>
+                <!-- X (Twitter) Icon -->
+                <a href="https://x.com/21xhr" target="_blank" aria-label="X" class="social-link">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <!-- YouTube Icon -->
+                <a href="https://www.youtube.com/@21xhr" target="_blank" aria-label="YouTube" class="social-link">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
